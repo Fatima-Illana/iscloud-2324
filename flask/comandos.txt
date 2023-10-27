@@ -1,0 +1,20 @@
+py -m pip install Flask
+pip3 list | grep Flask >> requirements.txt
+# Para windows: py -m pip list | findstr Fask >> requirements.txt
+
+docker build -t python-docker
+
+docker-compose up
+
+docker volume create mysql[nombre del volumen]
+Listar los volúmenes: docker volume ls 
+Te dice también dónde está ejecutando
+
+Listar las networks: docker network ls
+docker run --rm(si hay un contenedor con el mismp
+nombre nos lo borra primero)
+
+SHOW DATABASES; [Cuando estemos dentro de mysql]
+
+docker build -t python-docker:1.0.1 .
+docker run -d -p 5002:5000
